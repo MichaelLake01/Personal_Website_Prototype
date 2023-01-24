@@ -5,9 +5,12 @@
 
 }
 
+
+
 body
 {
     height: 100vh;
+    color: #EDF2F4;
 }
 
 .main-content
@@ -17,21 +20,6 @@ body
 
 }
 
-.first-color { 
-	background: #f70776; 
-}
-	
-.second-color { 
-	background: #c3195d; 
-}
-
-.third-color { 
-	background: #680747; 
-}
-
-.fourth-color { 
-	background: #141010; 
-}
 
 
 header
@@ -62,7 +50,6 @@ header
 .hero-text {
     text-align: center;
     width: 50%;
-    color: white;
     font-style: italic;
     margin-left: 15%;
     font-size: 32px;
@@ -81,14 +68,14 @@ header
     align-items: center;
     text-align: center;
     justify-content: center;
-	background: #141010; 
-    color:  #f70776; 
+	background: black; 
     min-height: 100vh;
 }
 
-h1
+h1,h2,h3
+
 {
-    font-size: 40px;
+    font-size: 46px;
     margin: 20px;
 }
 
@@ -118,18 +105,19 @@ h1
 
 .my-interests
 {
-	background: #680747; 
+	background:#14213D; 
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    color:  #c3195d;
-
+    justify-content: center;
+    min-height: 100vh;
+    gap: 50px;
 }
 
 h2
 {
     text-align: center;
+    
     
 }
 
@@ -138,7 +126,7 @@ h2
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
     flex-wrap: wrap;
     text-align: center;
 
@@ -147,13 +135,16 @@ h2
 
 .interest-card
 {
-    border: 2px dotted grey;
+
+    padding: 32px;
 }
 
 .interest-card img
 {
-    height: 200px;
+    max-height: 300px;
     max-width: 100vw;
+    border: 5px solid #FCA311;
+    border-radius: 20px;
 }
 
 
@@ -161,15 +152,17 @@ h2
 {
     width: 90%;
     margin: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFFFFF;
 }
 
 .quotes
 {
-	background: #c3195d; 
-    color:  #680747;
+	background:#E5E5E5; 
     text-align: center;
+    color: black;
 }
 
 .quote-cards
@@ -183,29 +176,31 @@ h2
 {
     display: flex;
     align-items: center;
-    gap: 70px;
-    border: 2px solid black;
-    border-radius: 20px;
+    justify-content: space-around;
     margin-top: 20px;
-    width: 800px;
+    padding: 30px;
 
 }
 
 
 
-.quotes img
+.quotes p
 {
-    height: 200px;
-    max-width: 100vw;
-    border-radius: 20px;
+    font-size: 24px;
+    font-style: italic;
+    flex: 2
+}
+
+.quotes span
+{
+    font-weight: bold;
 
 }
 
 .contact
 {
-	background: #f70776; 
+	background: #D90429; 
     display: flex;
-    justify-content: space-around;
     align-items: center;
 }
 
@@ -220,7 +215,7 @@ h2
 
 .contact-card
 {
-    border: 2px solid black;
+    border: 6px solid #EF233C;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
