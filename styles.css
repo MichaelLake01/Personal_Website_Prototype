@@ -165,19 +165,81 @@ h2
 .quotes
 {
 	background: #c3195d; 
-    color: #141010;
+    color:  #680747;
+    text-align: center;
 }
+
+.quote-cards
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quote-card
+{
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin-top: 20px;
+    width: 800px;
+
+}
+
+
 
 .quotes img
 {
     height: 200px;
     max-width: 100vw;
+    border-radius: 20px;
+
 }
 
 .contact
 {
 	background: #f70776; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 
+.contact-cards
+{
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 45px;
+    justify-content: center;
+}
+
+.contact-card
+{
+    border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    width: 200px;
+    max-height: 100%;
+}
+
+.small-text
+{
+    font-size: 12px;
+}
+
+
+.image-container
+{
+    max-width: 100%;
+    height: 75px;
+    border: 2px solid black;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: white;
 }
 
 .contact img
